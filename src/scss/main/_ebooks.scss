@@ -1,0 +1,54 @@
+.ebooks {
+  .ebooks--title {
+    font-size: map-get($font-size, medium);
+  }
+
+  .ebooks--collection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    gap: 20px;
+    height: fit-content;
+    margin-top: 100px;
+
+    .ebook--card {
+      // width: 200px;
+      height: fit-content;
+      text-align: center;
+
+      .ebook--cover img {
+        width: 250px;
+        height: 350px;
+        border-radius: 10px;
+      }
+
+      .ebook--info {
+        margin: 10px 0;
+
+        .ebook--title {
+          font-size: map-get($font-size, medium);
+        }
+
+        .ebook--author {
+          font-size: map-get($font-size, normal);
+        }
+      }
+      .ebook--btns {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        align-items: center;
+
+        button {
+          cursor: pointer;
+        }
+
+        img {
+          width: 25px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

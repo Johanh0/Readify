@@ -1,0 +1,35 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+
+  .nav--logo a {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: map-get($font-size, medium);
+  }
+
+  .nav--links ul {
+    display: flex;
+    gap: 35px;
+    list-style: none;
+
+    a {
+      text-decoration: none;
+      font-size: map-get($font-size, normal);
+      color: #000;
+    }
+  }
+
+  .nav--cart {
+    display: flex;
+    gap: 30px;
+
+    div img {
+      width: 25px;
+      cursor: pointer;
+    }
+  }
+}

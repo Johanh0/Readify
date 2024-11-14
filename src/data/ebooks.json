@@ -1,0 +1,52 @@
+{
+  "ebooks": [
+    {
+      "id": 1,
+      "title": "1984",
+      "author": "George Orwell",
+      "price": 15.0,
+      "quote": "War is peace. Freedom is slavery. Ignorance is strength.",
+      "img": "./src/assets/covers/1984.jpg"
+    },
+    {
+      "id": 2,
+      "title": "The Alchemist",
+      "author": "Paulo Coelho",
+      "price": 10.0,
+      "quote": "When you want something, all the universe conspires in helping you to achieve it.",
+      "img": "./src/assets/covers/the-alchemist.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Fairy Tale",
+      "author": "Stephen King ",
+      "price": 20.0,
+      "quote": "There's a dark well in everyone, I think, and it never goes dry. But you drink from it at your peril. That water is poison",
+      "img": "./src/assets/covers/fairy-tale.jpg"
+    },
+    {
+      "id": 4,
+      "title": "The Metamorphosis",
+      "author": "Franz Kafka",
+      "price": 10.0,
+      "quote": "I cannot make you understand. I cannot make anyone understand what is happening inside me. I cannot even explain it to myself.",
+      "img": "./src/assets/covers/metamorphosis.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Atomic Habits",
+      "author": "James Clear",
+      "price": 15.0,
+      "quote": "You do not rise to the level of your goals. You fall to the level of your systems.",
+      "img": "./src/assets/covers/atomic_habits.jpg"
+    },
+    {
+      "id": 6,
+      "title": "I Will Teach You to Be Rich",
+      "author": "Ramit Sethi",
+      "price": 10.0,
+      "quote": "The most important thing is to start. Do not wait until you have everything figured out.",
+      "img": "./src/assets/covers/teach_you_to_be_rich.jpg"
+    }
+  ]
+}

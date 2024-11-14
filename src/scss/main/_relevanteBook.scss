@@ -1,0 +1,44 @@
+.relevant--ebook {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 50px;
+  width: 100%;
+  height: fit-content;
+  margin: 200px 0;
+
+  h3 {
+    font-size: map-get($font-size, x-large);
+  }
+
+  p {
+    font-size: map-get($font-size, medium);
+  }
+
+  .relevant--ebook__left-container,
+  .relevant--ebook__right-container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: 250px;
+  }
+
+  .relevant--ebook__left-container {
+    text-align: center;
+
+    .relevant--ebook--quote {
+      font-style: italic;
+    }
+  }
+
+  .relevant--ebook__center-container {
+    img {
+      width: 400px;
+      border-radius: 15px;
+    }
+  }
+
+  .relevant--ebook__right-container {
+    text-align: center;
+  }
+}

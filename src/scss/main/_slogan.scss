@@ -1,0 +1,11 @@
+.slogan {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  div {
+    max-width: 900px;
+    text-align: center;
+    font-size: map-get($font-size, x-large);
+  }
+}
