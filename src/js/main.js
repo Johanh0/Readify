@@ -17,6 +17,11 @@ const getData = async () => {
   return data.ebooks;
 };
 
+// GET Random Number
+const getRandomNumber = async (arr) => {
+  return Math.floor(Math.random() * arr.length);
+};
+
 // GET a random ebook and show it in the hero
 async function randomeeBook() {
   const getebooks = await getData();
