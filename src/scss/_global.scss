@@ -19,7 +19,7 @@ body {
   grid-template-rows: auto 1fr auto;
 }
 
-body :where(header, main, footer) {
+body :where(header, main) {
   max-width: 1600px;
   width: 100%;
   margin: 0 auto;
@@ -34,6 +34,11 @@ button {
   cursor: pointer;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
 // Mobile
 // @media (max-width: 425px) {
 // }
@@ -43,4 +48,21 @@ button {
   body :where(header, main, footer) {
     padding: 15px;
   }
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white; /* Fondo blanco de base */
+  background-image: radial-gradient(
+    100% 50% at 50% 0%,
+    rgba(0, 163, 255, 0.13) 0%,
+    rgba(0, 163, 255, 0) 50%,
+    rgba(0, 163, 255, 0) 100%
+  );
+  z-index: -10;
 }

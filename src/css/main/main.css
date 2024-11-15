@@ -15,7 +15,7 @@ body {
   min-height: 100vh;
   grid-template-rows: auto 1fr auto; }
 
-body :where(header, main, footer) {
+body :where(header, main) {
   max-width: 1600px;
   width: 100%;
   margin: 0 auto;
@@ -28,9 +28,25 @@ button {
   border-radius: 10px;
   cursor: pointer; }
 
+a {
+  text-decoration: none;
+  color: white; }
+
 @media (max-width: 768px) {
   body :where(header, main, footer) {
     padding: 15px; } }
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  /* Fondo blanco de base */
+  background-image: radial-gradient(100% 50% at 50% 0%, rgba(0, 163, 255, 0.13) 0%, rgba(0, 163, 255, 0) 50%, rgba(0, 163, 255, 0) 100%);
+  z-index: -10; }
 
 .nav {
   display: flex;
@@ -136,6 +152,7 @@ button {
   .relevant--ebook .relevant--ebook__right-container {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 50px;
     width: 250px; }
   .relevant--ebook .relevant--ebook__left-container {
@@ -158,37 +175,89 @@ button {
     .relevant--ebook p {
       font-size: 3rem; } }
 
-.ebooks .ebooks--title {
-  font-size: 2rem; }
-
-.ebooks .ebooks--collection {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  width: 100%;
-  gap: 20px;
-  height: fit-content;
-  margin-top: 100px; }
-  .ebooks .ebooks--collection .ebook--card {
+.ebooks {
+  margin-bottom: 150px; }
+  .ebooks .ebooks--title {
+    font-size: 2rem; }
+  .ebooks .ebooks--collection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    gap: 20px;
     height: fit-content;
-    text-align: center; }
-    .ebooks .ebooks--collection .ebook--card .ebook--cover img {
-      width: 250px;
-      height: 350px;
-      border-radius: 10px; }
-    .ebooks .ebooks--collection .ebook--card .ebook--info {
-      margin: 10px 0; }
-      .ebooks .ebooks--collection .ebook--card .ebook--info .ebook--title {
-        font-size: 2rem; }
-      .ebooks .ebooks--collection .ebook--card .ebook--info .ebook--author {
-        font-size: 1.5rem; }
-    .ebooks .ebooks--collection .ebook--card .ebook--btns {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      align-items: center; }
-      .ebooks .ebooks--collection .ebook--card .ebook--btns button {
-        cursor: pointer; }
-      .ebooks .ebooks--collection .ebook--card .ebook--btns img {
-        width: 25px;
-        cursor: pointer; }
+    margin-top: 100px; }
+    .ebooks .ebooks--collection .ebook--card {
+      height: fit-content;
+      text-align: center; }
+      .ebooks .ebooks--collection .ebook--card .ebook--cover img {
+        width: 250px;
+        height: 350px;
+        border-radius: 10px; }
+      .ebooks .ebooks--collection .ebook--card .ebook--info {
+        margin: 10px 0; }
+        .ebooks .ebooks--collection .ebook--card .ebook--info .ebook--title {
+          font-size: 2rem; }
+        .ebooks .ebooks--collection .ebook--card .ebook--info .ebook--author {
+          font-size: 1.5rem; }
+      .ebooks .ebooks--collection .ebook--card .ebook--btns {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        align-items: center; }
+        .ebooks .ebooks--collection .ebook--card .ebook--btns button {
+          cursor: pointer; }
+        .ebooks .ebooks--collection .ebook--card .ebook--btns img {
+          width: 25px;
+          cursor: pointer; }
+
+footer {
+  position: relative;
+  background-color: black;
+  color: white;
+  padding: 50px 0;
+  height: 700px;
+  clip-path: polygon(0% 0, 100% 0%, 100% 100%, 0 100%); }
+  footer .reveal--content {
+    position: fixed;
+    height: 700px;
+    width: 100%;
+    bottom: 0;
+    background-color: black; }
+  footer section {
+    max-width: 1600px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 50px; }
+
+.footer__contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px; }
+  .footer__contact p {
+    font-size: 2rem; }
+  .footer__contact h3 {
+    font-size: 10rem;
+    font-weight: bold; }
+
+.footer__links {
+  display: flex;
+  justify-content: space-between;
+  width: 100%; }
+  .footer__links .footer__links--logo p {
+    font-size: 3rem;
+    font-weight: bold; }
+  .footer__links .footer__links--links ul {
+    display: flex;
+    flex: 1;
+    gap: 80px;
+    list-style: none;
+    font-size: 2rem; }
+  .footer__links .footer__links--social {
+    display: flex;
+    align-items: center;
+    gap: 30px; }
+    .footer__links .footer__links--social a img {
+      width: 25px; }

@@ -1,4 +1,5 @@
 import innerNav from "../components/nav";
+import innerFooter from "../components/footer";
 
 // HTML Elements
 const relevantebookElement = document.querySelector(".relevant--ebook");
@@ -15,11 +16,6 @@ const getData = async () => {
 
   const data = await response.json();
   return data.ebooks;
-};
-
-// GET Random Number
-const getRandomNumber = async (arr) => {
-  return Math.floor(Math.random() * arr.length);
 };
 
 // GET a random ebook and show it in the hero
@@ -79,11 +75,19 @@ async function ebookCollection() {
     
     `;
   });
-  console.log(ebook);
 }
 
-window.addEventListener("DOMContentLoaded", randomeeBook);
-window.addEventListener("DOMContentLoaded", ebookCollection);
+window.addEventListener("DOMContentLoaded", () => {
+  randomeeBook();
+  ebookCollection();
+
+  // Add actual year on the footer
+  const footerYear = document.querySelector("#footer--year");
+  footerYear.textContent = new Date().getFullYear();
+});
 
 // Adding Navbar to the website
 innerNav();
+
+// Adding Footer to the website
+innerFooter();
