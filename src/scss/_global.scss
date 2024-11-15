@@ -33,3 +33,14 @@ button {
   border-radius: 10px;
   cursor: pointer;
 }
+
+// Mobile
+// @media (max-width: 425px) {
+// }
+
+// Mobile
+@media (max-width: 768px) {
+  body :where(header, main, footer) {
+    padding: 15px;
+  }
+}

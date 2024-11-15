@@ -42,3 +42,20 @@
     text-align: center;
   }
 }
+
+// Tablet
+@media (max-width: 1768px) {
+  .relevant--ebook {
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+
+    h3 {
+      font-size: map-get($font-size, h1);
+    }
+
+    p {
+      font-size: map-get($font-size, large);
+    }
+  }
+}
