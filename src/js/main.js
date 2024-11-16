@@ -1,6 +1,3 @@
-import innerNav from "../components/nav";
-import innerFooter from "../components/footer";
-
 // HTML Elements
 const relevantebookElement = document.querySelector(".relevant--ebook");
 const collectionElement = document.querySelector(".ebooks--collection");
@@ -38,7 +35,7 @@ async function randomeeBook() {
           </div>
         </div>
         <div class="relevant--ebook__center-container">
-          <img src="${ebook.img}" alt="1984 ebook cover" />
+          <img src="${ebook.img}" alt="${ebook.title} ebook cover" loading="lazy"/>
         </div>
         <div class="relevant--ebook__right-container">
           <div class="elevant--ebook__right-container--price">
@@ -56,11 +53,16 @@ async function randomeeBook() {
 
 async function ebookCollection() {
   const getebooks = await getData();
+
   getebooks.forEach((ebook) => {
+    if (ebook.id > 8) {
+      return;
+    }
+
     collectionElement.innerHTML += `
               <div class="ebook--card">
             <div class="ebook--cover">
-              <img src="${ebook.img}" alt="${ebook.title} ebook cover" />
+              <img src="${ebook.img}" alt="${ebook.title} ebook cover" loading="lazy"/>
             </div>
             <div class="ebook--info">
               <h5 class="ebook--title">${ebook.title}</h5>
@@ -85,9 +87,3 @@ window.addEventListener("DOMContentLoaded", () => {
   const footerYear = document.querySelector("#footer--year");
   footerYear.textContent = new Date().getFullYear();
 });
-
-// Adding Navbar to the website
-innerNav();
-
-// Adding Footer to the website
-innerFooter();
