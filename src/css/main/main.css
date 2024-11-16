@@ -22,11 +22,16 @@ body :where(header, main) {
   padding: 50px; }
 
 button {
-  width: 120px;
-  height: 50px;
+  width: 150px;
+  height: 60px;
+  font-size: 2rem;
   border: none;
   border-radius: 10px;
   cursor: pointer; }
+
+button.buy--btn {
+  background-color: black;
+  color: white; }
 
 a {
   text-decoration: none;
@@ -184,10 +189,11 @@ body::before {
     flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
-    gap: 20px;
+    gap: 80px;
     height: fit-content;
     margin-top: 100px; }
     .ebooks .ebooks--collection .ebook--card {
+      width: 300px;
       height: fit-content;
       text-align: center; }
       .ebooks .ebooks--collection .ebook--card .ebook--cover img {
@@ -216,11 +222,13 @@ footer {
   background-color: black;
   color: white;
   padding: 50px 0;
-  height: 700px;
+  min-height: 700px;
+  height: fit-content;
   clip-path: polygon(0% 0, 100% 0%, 100% 100%, 0 100%); }
   footer .reveal--content {
     position: fixed;
-    height: 700px;
+    min-height: 700px;
+    height: fit-content;
     width: 100%;
     bottom: 0;
     background-color: black; }
@@ -245,7 +253,8 @@ footer {
 .footer__links {
   display: flex;
   justify-content: space-between;
-  width: 100%; }
+  width: 100%;
+  border-top: 0.5px solid rgba(183, 183, 183, 0.423); }
   .footer__links .footer__links--logo p {
     font-size: 3rem;
     font-weight: bold; }
@@ -261,3 +270,10 @@ footer {
     gap: 30px; }
     .footer__links .footer__links--social a img {
       width: 25px; }
+
+@media (max-width: 768px) {
+  .footer__links {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px; } }

@@ -48,7 +48,7 @@ async function randomeeBook() {
             <h3>${ebook.title}</h3>
           </div>
           <div class="relevant--ebook__right-container--cta">
-            <button>Buy</button>
+            <button class="buy--btn">Buy</button>
           </div>
         </div>
   `;
@@ -67,7 +67,7 @@ async function ebookCollection() {
               <p class="ebook--author">${ebook.author}</p>
             </div>
             <div class="ebook--btns">
-              <button>Add to Cart</button>
+              <button class="buy--btn">Add to Cart</button>
               <img src="./src/assets/icons/heart.svg" alt="wishlist icon" />
             </div>
           </div>
