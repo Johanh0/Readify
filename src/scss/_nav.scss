@@ -32,4 +32,54 @@
       cursor: pointer;
     }
   }
+
+  .nav--menu {
+    display: none;
+  }
+}
+
+// Tablet
+@media (max-width: 779px) {
+  .nav--links {
+    display: none;
+  }
+
+  .nav .nav--cart {
+    display: none;
+  }
+
+  .nav .nav--menu {
+    position: relative;
+    display: block;
+    cursor: pointer;
+    z-index: 100;
+
+    .nav--menu__module {
+      display: none;
+      position: absolute;
+      background-color: map-get($colors, soft-white);
+      right: 0;
+      top: 20px;
+      padding: 10px 20px;
+      border-radius: 10px;
+      border: 0.2px solid rgba(186, 186, 186, 0.706);
+
+      ul {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        list-style: none;
+        text-align: end;
+
+        li a {
+          color: black;
+          font-size: map-get($font-size, medium);
+        }
+      }
+    }
+
+    .nav--menu__module--open {
+      display: block !important;
+    }
+  }
 }

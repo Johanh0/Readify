@@ -35,6 +35,25 @@
           font-size: map-get($font-size, normal);
         }
       }
+
+      .ebook--details {
+        margin: 20px 0;
+
+        .ebook--price {
+          font-size: map-get($font-size, medium);
+        }
+
+        .ebook--description {
+          font-size: map-get($font-size, normal);
+          height: 60px;
+          overflow: hidden;
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 3;
+          text-overflow: ellipsis;
+        }
+      }
+
       .ebook--btns {
         display: flex;
         justify-content: center;
@@ -51,5 +70,13 @@
         }
       }
     }
+  }
+}
+
+// Tablet
+@media (max-width: 779px) {
+  .ebooks .ebooks--collection {
+    justify-content: center;
+    gap: 40px;
   }
 }

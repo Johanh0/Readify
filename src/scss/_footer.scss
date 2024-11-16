@@ -73,10 +73,21 @@
 }
 
 @media (max-width: 768px) {
+  #footer .reveal--content {
+    position: static;
+  }
+
+  .footer__contact {
+    text-align: center;
+  }
+  .footer__contact h3 {
+    line-height: 80px;
+  }
   .footer__links {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     gap: 50px;
   }
 }

@@ -6,7 +6,7 @@
       "author": "George Orwell",
       "price": 5.0,
       "quote": "War is peace. Freedom is slavery. Ignorance is strength.",
-      "img": "./src/assets/covers/1984.jpg",
+      "img": "/public/covers/1984.jpg",
       "description": "A dystopian novel about a totalitarian regime that uses surveillance, manipulation, and mind control to maintain power. A classic exploration of government, freedom, and individualism.",
       "categories": ["Dystopian", "Political", "Science Fiction"]
     },
@@ -16,7 +16,7 @@
       "author": "Paulo Coelho",
       "price": 5.0,
       "quote": "When you want something, all the universe conspires in helping you to achieve it.",
-      "img": "./src/assets/covers/the-alchemist.jpg",
+      "img": "/public/covers/the-alchemist.jpg",
       "description": "A young Andalusian shepherd embarks on a journey to find treasure, discovering the deeper meaning of life and his own personal legend along the way.",
       "categories": ["Fiction", "Philosophy", "Adventure"]
     },
@@ -26,7 +26,7 @@
       "author": "Stephen King",
       "price": 5.0,
       "quote": "There's a dark well in everyone, I think, and it never goes dry. But you drink from it at your peril. That water is poison.",
-      "img": "./src/assets/covers/fairy-tale.jpg",
+      "img": "/public/covers/fairy-tale.jpg",
       "description": "A supernatural thriller in which a teenager discovers a portal to a twisted version of reality, forcing him to confront a dark force that threatens both worlds.",
       "categories": ["Horror", "Fantasy", "Thriller"]
     },
@@ -36,7 +36,7 @@
       "author": "Franz Kafka",
       "price": 5.0,
       "quote": "I cannot make you understand. I cannot make anyone understand what is happening inside me. I cannot even explain it to myself.",
-      "img": "./src/assets/covers/metamorphosis.jpg",
+      "img": "/public/covers/metamorphosis.jpg",
       "description": "A novella about Gregor Samsa, a man who wakes up one morning transformed into a giant insect, exploring themes of isolation, identity, and alienation.",
       "categories": ["Existential", "Surrealism", "Literary Fiction"]
     },
@@ -46,7 +46,7 @@
       "author": "James Clear",
       "price": 5.0,
       "quote": "You do not rise to the level of your goals. You fall to the level of your systems.",
-      "img": "./src/assets/covers/atomic_habits.jpg",
+      "img": "/public/covers/atomic_habits.jpg",
       "description": "A self-help book that outlines practical strategies for forming good habits, breaking bad ones, and mastering the tiny behaviors that lead to remarkable results.",
       "categories": ["Self-help", "Personal Development", "Psychology"]
     },
@@ -56,7 +56,7 @@
       "author": "Ramit Sethi",
       "price": 5.0,
       "quote": "The most important thing is to start. Do not wait until you have everything figured out.",
-      "img": "./src/assets/covers/teach_you_to_be_rich.jpg",
+      "img": "/public/covers/teach_you_to_be_rich.jpg",
       "description": "A guide to personal finance that covers everything from budgeting to investing, aimed at young professionals who want to take control of their financial futures.",
       "categories": ["Finance", "Self-help", "Personal Growth"]
     },
@@ -66,7 +66,7 @@
       "author": "John Katzenbach",
       "price": 5.0,
       "quote": "The mind is a terrible thing to waste, but it's also a dangerous thing to use.",
-      "img": "./src/assets/covers/the_analyst.jpg",
+      "img": "/public/covers/the_analyst.jpg",
       "description": "A psychological thriller about a psychoanalyst who becomes the target of a mysterious game played by a patient who seems to know everything about him.",
       "categories": ["Thriller", "Psychological", "Mystery"]
     },
@@ -76,7 +76,7 @@
       "author": "Hermann Hesse",
       "price": 5.0,
       "quote": "I have always thirsted for knowledge, I have always been full of questions.",
-      "img": "./src/assets/covers/siddhartha.jpg",
+      "img": "/public/covers/siddhartha.jpg",
       "description": "A philosophical novel about a young man named Siddhartha's quest for enlightenment, exploring themes of self-discovery, spirituality, and the meaning of life.",
       "categories": ["Philosophy", "Fiction", "Spirituality"]
     },
@@ -86,7 +86,7 @@
       "author": "Hermann Hesse",
       "price": 5.0,
       "quote": "I am trying to understand the world. I am trying to understand myself. But I am also trying to understand that I can never understand.",
-      "img": "./src/assets/covers/steppenwolf.jpg",
+      "img": "/public/covers/steppenwolf.jpg",
       "description": "A novel that delves into the mind of Harry Haller, a man caught between two worlds, grappling with his dual nature and his desire to transcend his human limitations.",
       "categories": ["Philosophical", "Psychological", "Literary Fiction"]
     },
@@ -96,7 +96,7 @@
       "author": "Hermann Hesse",
       "price": 5.0,
       "quote": "One must find the source within one's own Self, one must possess it. Everything else is a delusion.",
-      "img": "./src/assets/covers/demian.jpg",
+      "img": "/public/covers/demian.jpg",
       "description": "A novel about a young man's journey to self-realization, exploring themes of spirituality, the search for truth, and the conflict between individuality and society.",
       "categories": ["Fiction", "Philosophy", "Spirituality"]
     },
@@ -106,7 +106,7 @@
       "author": "Gabriel Garcia Marquez",
       "price": 5.0,
       "quote": "The world was so recent that many things lacked names, and in order to indicate them it was necessary to point.",
-      "img": "./src/assets/covers/solitude.jpg",
+      "img": "/public/covers/solitude.jpg",
       "description": "A landmark work of magic realism, this novel tells the multi-generational story of the Buendía family in the fictional town of Macondo, blending the fantastic with the real.",
       "categories": ["Magical Realism", "Fiction", "Latin American Literature"]
     },
@@ -116,7 +116,7 @@
       "author": "Juan Rulfo",
       "price": 5.0,
       "quote": "They all came to life when they saw me. They were waiting for me.",
-      "img": "./src/assets/covers/pedro_paramo.jpg",
+      "img": "/public/covers/pedro_paramo.jpg",
       "description": "A surreal and haunting novel about a man named Juan Preciado, who travels to the town of Comala to find his father, only to encounter the spirits of the dead.",
       "categories": ["Magical Realism", "Fiction", "Latin American Literature"]
     },
@@ -126,7 +126,7 @@
       "author": "Dante Alighieri",
       "price": 5.0,
       "quote": "Midway upon the journey of our life, I found myself within a forest dark, For the straightforward path had been lost.",
-      "img": "./src/assets/covers/divine_comedy.jpg",
+      "img": "/public/covers/divine_comedy.jpg",
       "description": "A three-part epic poem that explores the soul’s journey through Hell (Inferno), Purgatory (Purgatorio), and Paradise (Paradiso), blending theological, philosophical, and personal reflections.",
       "categories": ["Epic", "Philosophy", "Religious"]
     },
@@ -136,7 +136,7 @@
       "author": "Friedrich Nietzsche",
       "price": 5.0,
       "quote": "And those who were seen dancing were thought to be insane by those who could not hear the music.",
-      "img": "./src/assets/covers/zarathustra.jpg",
+      "img": "/public/covers/zarathustra.jpg",
       "description": "A philosophical novel that presents the teachings of Zarathustra, a prophet who proclaims the death of God and introduces concepts such as the Übermensch (Superman) and the eternal recurrence.",
       "categories": ["Philosophy", "Existentialism", "Classics"]
     },
@@ -146,7 +146,7 @@
       "author": "Charles Bukowski",
       "price": 5.0,
       "quote": "I wanted the whole world or nothing.",
-      "img": "./src/assets/covers/dog_from_hell.jpg",
+      "img": "/public/covers/dog_from_hell.jpg",
       "description": "A collection of Bukowski’s raw, gritty poetry, exploring themes of love, despair, alienation, and the human condition in the modern world.",
       "categories": ["Poetry", "Contemporary", "Literary Fiction"]
     },
@@ -156,7 +156,7 @@
       "author": "Marcus Aurelius",
       "price": 5.0,
       "quote": "You have power over your mind, not outside events. Realize this, and you will find strength.",
-      "img": "./src/assets/covers/meditations.jpg",
+      "img": "/public/covers/meditations.jpg",
       "description": "A series of personal writings by the Roman Emperor, offering practical advice on Stoicism, virtue, and the importance of inner peace in the face of external chaos.",
       "categories": ["Philosophy", "Self-help", "Classics"]
     }

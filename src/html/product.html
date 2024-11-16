@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="../js/products.js" type="module" defer></script>
+    <script src="../js/product.js" type="module" defer></script>
     <link rel="stylesheet" href="../css/product/product.css" />
-    <title>Readify - eBooks</title>
+    <title>Document</title>
   </head>
   <body>
     <header id="header">
@@ -17,30 +17,65 @@
         <div class="nav--links">
           <ul>
             <li><a href="../../index.html">Home</a></li>
-            <li><a href="./product.html">eBooks</a></li>
+            <li><a href="./ebooks.html">eBooks</a></li>
             <li><a href="./contact.html">Contact</a></li>
           </ul>
         </div>
 
         <div class="nav--cart">
           <div>
-            <img src="./src/assets/icons/heart.svg" alt="wishlist icon" />
+            <img src="/public/icons/heart.svg" alt="wishlist icon" />
           </div>
           <div>
-            <img src="./src/assets/icons/cart.svg" alt="cart icon" />
+            <img src="/public/icons/cart.svg" alt="cart icon" />
+          </div>
+        </div>
+
+        <div class="nav--menu">
+          <div class="menu__icon">
+            <img src="/public/icons/menu.svg" alt="Menu icon for mobile" />
+          </div>
+
+          <div class="nav--menu__module">
+            <ul>
+              <li><a href="../../index.html">Home</a></li>
+              <li><a href="./ebooks.html">eBooks</a></li>
+              <li><a href="./contact.html">Contact</a></li>
+            </ul>
           </div>
         </div>
       </nav>
     </header>
 
-    <main></main>
+    <main>
+      <section class="product__container">
+        <!-- <div class="product--cover">
+          <div class=""></div>
+          <img src="/public/covers/steppenwolf.jpg" alt="" />
+        </div>
+
+        <div class="product__info">
+          <div class="product__info--title">
+            <h3>TItle</h3>
+            <p>Author</p>
+          </div>
+          <div class="product__info--description">
+            <p>quote</p>
+            <p>description</p>
+          </div>
+          <div class="product__info--btn">
+            <button class="secondary--btn">Buy eBook</button>
+          </div>
+        </div> -->
+      </section>
+    </main>
 
     <footer id="footer">
       <div class="reveal--content">
         <section class="footer__contact">
           <p>Your next great eBook is just a click away.</p>
           <h3>Get in Touch!</h3>
-          <button>Contact Us</button>
+          <button class="primary--btn">Contact Us</button>
           <p>&copy; <span id="footer--year"></span> Readify</p>
         </section>
         <section class="footer__links">
@@ -49,17 +84,17 @@
           </div>
           <div class="footer__links--links">
             <ul>
-              <li><a href="">Home</a></li>
-              <li><a href="">eBooks</a></li>
-              <li><a href="">Contact</a></li>
+              <li><a href="../../index.html">Home</a></li>
+              <li><a href="./ebooks.html">eBooks</a></li>
+              <li><a href="./contact.html">Contact</a></li>
             </ul>
           </div>
           <div class="footer__links--social">
             <a href="">
-              <img src="./src/assets/icons/linkedin.svg" alt="Linkedin icon" />
+              <img src="/public/icons/linkedin.svg" alt="Linkedin icon" />
             </a>
             <a href="">
-              <img src="./src/assets/icons/github.svg" alt="Github icon" />
+              <img src="/public/icons/github.svg" alt="Github icon" />
             </a>
           </div>
         </section>
