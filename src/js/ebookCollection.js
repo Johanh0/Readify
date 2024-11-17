@@ -25,7 +25,7 @@ export default async function ebookCollection(isLimited) {
                 <p class="ebook--description">${ebook.description}</p>
               </div>
               <div class="ebook--btns">
-                <button class="secondary--btn">Add to Cart</button>
+                <button class="secondary--btn">View eBook</button>
                 <img src="/public/icons/heart.svg" alt="wishlist icon" />
               </div>
             </div>

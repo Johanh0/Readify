@@ -26,16 +26,24 @@ body :where(header, main) {
   padding: 50px;
 }
 
-button.primary--btn {
+button.primary--btn,
+a.primary--btn {
   width: 150px;
   height: 60px;
   font-size: map-get($font-size, medium);
   border: none;
   border-radius: 10px;
+  background-color: white;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
 }
 
-button.secondary--btn {
+button.secondary--btn,
+a.secondary--btn,
+input.secondary--btn {
   width: 150px;
   height: 60px;
   font-size: map-get($font-size, medium);

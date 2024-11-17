@@ -1,0 +1,131 @@
+@import "../var";
+@import "../global";
+@import "../nav";
+@import "../footer";
+
+.contact__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  //   gap: 100px;
+  width: 100%;
+  height: fit-content;
+}
+
+.contact--form {
+  width: 100%;
+  max-width: 1000px;
+}
+
+.contact--title h3 {
+  font-size: map-get($font-size, h1);
+}
+
+.contact__container form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+  width: 100%;
+  height: fit-content;
+  min-height: 1000px;
+
+  label {
+    font-size: map-get($font-size, large);
+    margin-bottom: 20px;
+  }
+
+  .contact__container--personal {
+    display: flex;
+    gap: 40px;
+    width: 100%;
+
+    div {
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+
+      input {
+        height: fit-content;
+        border: none;
+        padding-bottom: 15px;
+        border-bottom: 0.5px solid black;
+        font-size: map-get($font-size, medium);
+        outline: none;
+      }
+    }
+  }
+
+  .contact__container--email {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    label {
+      font-size: map-get($font-size, large);
+      margin-bottom: 20px;
+    }
+
+    input {
+      flex: 1;
+      height: fit-content;
+      border: none;
+      padding-bottom: 15px;
+      border-bottom: 0.5px solid black;
+      font-size: map-get($font-size, medium);
+      outline: none;
+    }
+  }
+
+  .contact__container--text {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    textarea {
+      flex: 1;
+      min-height: 180px;
+      max-width: 100%;
+      min-width: 100%;
+      padding: 5px;
+      border: 0.5px solid black;
+      font-size: map-get($font-size, medium);
+      outline: none;
+    }
+  }
+
+  .contact__container--submit input {
+    pointer-events: none;
+    opacity: 0.6;
+  }
+
+  .contact__container--submit input.enable {
+    pointer-events: all;
+    cursor: pointer;
+    opacity: 1;
+  }
+}
+
+main .contact__container .contact--form form {
+  .contact__container--personal,
+  .contact__container--email,
+  .contact__container--text {
+    input.error {
+      color: red;
+      border-bottom: 0.5px solid red;
+    }
+
+    label.error {
+      color: red;
+    }
+  }
+}
+
+// Tablet
+@media (max-width: 779px) {
+  .contact__container .contact__container--personal {
+    flex-direction: column;
+  }
+}

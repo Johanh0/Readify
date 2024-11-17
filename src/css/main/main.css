@@ -21,15 +21,23 @@ body :where(header, main) {
   margin: 0 auto;
   padding: 50px; }
 
-button.primary--btn {
+button.primary--btn,
+a.primary--btn {
   width: 150px;
   height: 60px;
   font-size: 2rem;
   border: none;
   border-radius: 10px;
+  background-color: white;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   cursor: pointer; }
 
-button.secondary--btn {
+button.secondary--btn,
+a.secondary--btn,
+input.secondary--btn {
   width: 150px;
   height: 60px;
   font-size: 2rem;
@@ -221,7 +229,8 @@ a {
     .ebooks .ebooks--collection .ebook--card {
       width: 300px;
       height: fit-content;
-      text-align: center; }
+      text-align: center;
+      cursor: pointer; }
       .ebooks .ebooks--collection .ebook--card .ebook--cover img {
         width: 250px;
         height: 350px;

@@ -3,7 +3,121 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="../js/contact.js" type="module" defer></script>
+    <link rel="stylesheet" href="../css/contact/contact.css" />
     <title>Readify - Contact Us</title>
   </head>
-  <body></body>
+  <body>
+    <header id="header">
+      <nav class="nav">
+        <div class="nav--logo">
+          <a href="../../index.html">Readify</a>
+        </div>
+
+        <div class="nav--links">
+          <ul>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="./ebooks.html">eBooks</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="nav--cart">
+          <div>
+            <img src="/public/icons/heart.svg" alt="wishlist icon" />
+          </div>
+          <div>
+            <img src="/public/icons/cart.svg" alt="cart icon" />
+          </div>
+        </div>
+
+        <div class="nav--menu">
+          <div class="menu__icon">
+            <img src="/public/icons/menu.svg" alt="Menu icon for mobile" />
+          </div>
+
+          <div class="nav--menu__module">
+            <ul>
+              <li><a href="../../index.html">Home</a></li>
+              <li><a href="./ebooks.html">eBooks</a></li>
+              <li><a href="./contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="contact__container">
+        <div class="contact--title">
+          <h3>Contact Us!</h3>
+        </div>
+        <div class="contact--form">
+          <form action="" id="form">
+            <div class="contact__container--personal">
+              <div>
+                <label for="name-input">Name<span>*</span></label>
+                <input class="input" id="name-input" type="text" required />
+              </div>
+              <div>
+                <label for="last-name-input">Last Name<span>*</span></label>
+                <input
+                  class="input"
+                  id="last-name-input"
+                  type="text"
+                  required
+                />
+              </div>
+            </div>
+            <div class="contact__container--email">
+              <label for="email-input">Email Address<span>*</span></label>
+              <input class="input" id="email-input" type="email" required />
+            </div>
+            <div class="contact__container--text">
+              <label for="message-input">Message</label>
+              <textarea class="input" id="message-input"></textarea>
+            </div>
+            <div class="contact__container--submit">
+              <input
+                type="submit"
+                value="Submit"
+                class="secondary--btn"
+                id="submit-form"
+              />
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer id="footer">
+      <div class="reveal--content">
+        <section class="footer__contact">
+          <p>Your next great eBook is just a click away.</p>
+          <h3>Get in Touch!</h3>
+          <button class="primary--btn">Contact Us</button>
+          <p>&copy; <span id="footer--year"></span> Readify</p>
+        </section>
+        <section class="footer__links">
+          <div class="footer__links--logo">
+            <p>Readify</p>
+          </div>
+          <div class="footer__links--links">
+            <ul>
+              <li><a href="../../index.html">Home</a></li>
+              <li><a href="./ebooks.html">eBooks</a></li>
+              <li><a href="./contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer__links--social">
+            <a href="https://www.linkedin.com/in/johanh0/">
+              <img src="/public/icons/linkedin.svg" alt="Linkedin icon" />
+            </a>
+            <a href="https://github.com/Johanh0/Readify">
+              <img src="/public/icons/github.svg" alt="Github icon" />
+            </a>
+          </div>
+        </section>
+      </div>
+    </footer>
+  </body>
 </html>

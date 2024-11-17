@@ -112,99 +112,6 @@ a {
     .nav .nav--menu .nav--menu__module--open {
       display: block !important; } }
 
-.search__container {
-  width: 100%;
-  height: fit-content;
-  margin-bottom: 100px; }
-  .search__container form {
-    width: 60%;
-    height: 60px; }
-    .search__container form .search {
-      display: flex;
-      align-items: center;
-      width: 100%;
-      height: 100%;
-      padding: 15px 30px;
-      border-radius: 10px;
-      background-color: #f3f5f7; }
-      .search__container form .search .search--input {
-        flex: 1;
-        background-color: transparent;
-        height: 100%;
-        font-size: 2rem;
-        border: none;
-        outline: none; }
-      .search__container form .search .search--btns {
-        display: flex;
-        gap: 20px; }
-        .search__container form .search .search--btns button {
-          background-color: transparent;
-          border: none;
-          cursor: pointer; }
-          .search__container form .search .search--btns button img.search--icon {
-            width: 30px; }
-          .search__container form .search .search--btns button img.microphone--icon {
-            width: 20px; }
-
-@media (max-width: 779px) {
-  .search__container form {
-    width: 100%; } }
-
-.ebooks {
-  margin-bottom: 150px; }
-  .ebooks .ebooks--title {
-    font-size: 2rem; }
-  .ebooks .ebooks--collection {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 100%;
-    gap: 80px;
-    height: fit-content;
-    margin-top: 100px; }
-    .ebooks .ebooks--collection .ebook--card {
-      width: 300px;
-      height: fit-content;
-      text-align: center;
-      cursor: pointer; }
-      .ebooks .ebooks--collection .ebook--card .ebook--cover img {
-        width: 250px;
-        height: 350px;
-        border-radius: 10px; }
-      .ebooks .ebooks--collection .ebook--card .ebook--info {
-        margin: 10px 0; }
-        .ebooks .ebooks--collection .ebook--card .ebook--info .ebook--title {
-          font-size: 2rem; }
-        .ebooks .ebooks--collection .ebook--card .ebook--info .ebook--author {
-          font-size: 1.5rem; }
-      .ebooks .ebooks--collection .ebook--card .ebook--details {
-        margin: 20px 0; }
-        .ebooks .ebooks--collection .ebook--card .ebook--details .ebook--price {
-          font-size: 2rem; }
-        .ebooks .ebooks--collection .ebook--card .ebook--details .ebook--description {
-          font-size: 1.5rem;
-          height: 60px;
-          overflow: hidden;
-          display: -webkit-box;
-          -webkit-box-orient: vertical;
-          -webkit-line-clamp: 3;
-          text-overflow: ellipsis; }
-      .ebooks .ebooks--collection .ebook--card .ebook--btns {
-        display: flex;
-        justify-content: center;
-        gap: 20px;
-        align-items: center; }
-        .ebooks .ebooks--collection .ebook--card .ebook--btns button {
-          cursor: pointer; }
-        .ebooks .ebooks--collection .ebook--card .ebook--btns img {
-          width: 25px;
-          cursor: pointer; }
-
-@media (max-width: 779px) {
-  .ebooks .ebooks--collection {
-    justify-content: center;
-    gap: 40px; } }
-
 #footer {
   position: relative;
   background-color: black;
@@ -272,3 +179,96 @@ a {
     align-items: center;
     text-align: center;
     gap: 50px; } }
+
+.contact__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: fit-content; }
+
+.contact--form {
+  width: 100%;
+  max-width: 1000px; }
+
+.contact--title h3 {
+  font-size: 6rem; }
+
+.contact__container form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+  width: 100%;
+  height: fit-content;
+  min-height: 1000px; }
+  .contact__container form label {
+    font-size: 3rem;
+    margin-bottom: 20px; }
+  .contact__container form .contact__container--personal {
+    display: flex;
+    gap: 40px;
+    width: 100%; }
+    .contact__container form .contact__container--personal div {
+      display: flex;
+      flex: 1;
+      flex-direction: column; }
+      .contact__container form .contact__container--personal div input {
+        height: fit-content;
+        border: none;
+        padding-bottom: 15px;
+        border-bottom: 0.5px solid black;
+        font-size: 2rem;
+        outline: none; }
+  .contact__container form .contact__container--email {
+    display: flex;
+    flex-direction: column;
+    width: 100%; }
+    .contact__container form .contact__container--email label {
+      font-size: 3rem;
+      margin-bottom: 20px; }
+    .contact__container form .contact__container--email input {
+      flex: 1;
+      height: fit-content;
+      border: none;
+      padding-bottom: 15px;
+      border-bottom: 0.5px solid black;
+      font-size: 2rem;
+      outline: none; }
+  .contact__container form .contact__container--text {
+    display: flex;
+    flex-direction: column;
+    width: 100%; }
+    .contact__container form .contact__container--text textarea {
+      flex: 1;
+      min-height: 180px;
+      max-width: 100%;
+      min-width: 100%;
+      padding: 5px;
+      border: 0.5px solid black;
+      font-size: 2rem;
+      outline: none; }
+  .contact__container form .contact__container--submit input {
+    pointer-events: none;
+    opacity: 0.6; }
+  .contact__container form .contact__container--submit input.enable {
+    pointer-events: all;
+    cursor: pointer;
+    opacity: 1; }
+
+main .contact__container .contact--form form .contact__container--personal input.error,
+main .contact__container .contact--form form .contact__container--email input.error,
+main .contact__container .contact--form form .contact__container--text input.error {
+  color: red;
+  border-bottom: 0.5px solid red; }
+
+main .contact__container .contact--form form .contact__container--personal label.error,
+main .contact__container .contact--form form .contact__container--email label.error,
+main .contact__container .contact--form form .contact__container--text label.error {
+  color: red; }
+
+@media (max-width: 779px) {
+  .contact__container .contact__container--personal {
+    flex-direction: column; } }
