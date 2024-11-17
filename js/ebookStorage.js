@@ -9,7 +9,7 @@ export default function ebookStorage() {
       sessionStorage.clear();
       sessionStorage.setItem("ebookID", ebook.dataset.id);
 
-      window.location.href = "/src/html/product.html";
+      window.location.href = "../html/product.html";
     });
   });
 }

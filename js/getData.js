@@ -1,6 +1,6 @@
 // GET Data from JSON
 export const getData = async () => {
-  const url = `/data/ebooks.json`;
+  const url = `../ebooks.json`;
 
   const response = await fetch(url);
   if (!response.ok) {

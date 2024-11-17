@@ -1,8 +1,20 @@
 // Imports
-import toggleMenu from "./nav";
-import { getData } from "./getData";
-import ebookCollection from "./ebookCollection";
-import ebookStorage from "./ebookStorage";
+import toggleMenu from "./nav.js";
+import { getData } from "./getData.js";
+import ebookCollection from "./ebookCollection.js";
+import ebookStorage from "./ebookStorage.js";
+
+// const getDataa = async () => {
+//   const url = `../ebooks.json`;
+
+//   const response = await fetch(url);
+//   if (!response.ok) {
+//     throw new Error("Something went wrong");
+//   }
+
+//   const data = await response.json();
+//   return data.ebooks;
+// };
 
 // HTML Elements
 const relevantebookElement = document.querySelector(".relevant--ebook");
