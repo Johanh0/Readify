@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "sass": "node-sass -w ./src/scss -o ./src/css"
+    "sass": "node-sass -w ./src/scss -o ./public/css"
   },
   "devDependencies": {
     "node-sass": "^9.0.0",
