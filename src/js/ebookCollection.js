@@ -1,4 +1,4 @@
-import { getData } from "/js/getData";
+import { getData } from "./getData";
 
 export default async function ebookCollection(isLimited) {
   const collectionElement = document.querySelector(".ebooks--collection");

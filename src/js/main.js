@@ -1,8 +1,8 @@
 // Imports
-import toggleMenu from "/js/nav";
-import { getData } from "/js/getData";
-import ebookCollection from "/js/ebookCollection";
-import ebookStorage from "/js/ebookStorage";
+import toggleMenu from "./nav";
+import { getData } from "./getData";
+import ebookCollection from "./ebookCollection";
+import ebookStorage from "./ebookStorage";
 
 // HTML Elements
 const relevantebookElement = document.querySelector(".relevant--ebook");
