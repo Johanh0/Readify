@@ -1,4 +1,4 @@
-import { getData } from "./getData";
+import { getData } from "/public/js/getData";
 
 export default async function ebookCollection(isLimited) {
   const collectionElement = document.querySelector(".ebooks--collection");
@@ -26,7 +26,7 @@ export default async function ebookCollection(isLimited) {
               </div>
               <div class="ebook--btns">
                 <button class="secondary--btn">View eBook</button>
-                <img src="/public/icons/heart.svg" alt="wishlist icon" />
+                <img src="/icons/heart.svg" alt="wishlist icon" />
               </div>
             </div>
           </div>
