@@ -1,7 +1,7 @@
 // Imports
-import toggleMenu from "/js/nav";
-import ebookCollection from "/js/ebookCollection";
-import ebookStorage from "/js/ebookStorage";
+import toggleMenu from "./nav";
+import ebookCollection from "./ebookCollection";
+import ebookStorage from "./ebookStorage";
 
 window.addEventListener("DOMContentLoaded", () => {
   toggleMenu();
