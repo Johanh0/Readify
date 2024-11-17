@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="../js/ebooks.js" type="module" defer></script>
+    <script src="/src/js/contact.js" type="module" defer></script>
     <link rel="shortcut icon" href="/public/icons/icon.svg" />
-    <link rel="stylesheet" href="../css/ebooks/ebooks.css" />
-    <title>Readify - eBooks</title>
+    <link rel="stylesheet" href="/src/css/contact/contact.css" />
+    <title>Readify - Contact Us</title>
   </head>
   <body>
     <header id="header">
@@ -47,38 +47,46 @@
         </div>
       </nav>
     </header>
-
     <main>
-      <section class="search__container">
-        <form action="">
-          <div class="search">
-            <input type="text" class="search--input" />
-            <div class="search--btns">
-              <button>
-                <img
-                  class="search--icon"
-                  src="/public/icons/search.svg"
-                  alt="Magnify icon for search eBooks"
-                />
-              </button>
-              <button>
-                <img
-                  class="microphone--icon"
-                  src="/public/icons/microphone.svg"
-                  alt="Microphone for search with voice"
-                />
-              </button>
-            </div>
-          </div>
-        </form>
-      </section>
-
-      <section class="ebooks">
-        <div class="ebooks--title">
-          <p>Our eBooks</p>
+      <section class="contact__container">
+        <div class="contact--title">
+          <h3>Contact Us!</h3>
         </div>
-
-        <div class="ebooks--collection"></div>
+        <div class="contact--form">
+          <form action="" id="form">
+            <div class="contact__container--personal">
+              <div>
+                <label for="name-input">Name<span>*</span></label>
+                <input class="input" id="name-input" type="text" required />
+              </div>
+              <div>
+                <label for="last-name-input">Last Name<span>*</span></label>
+                <input
+                  class="input"
+                  id="last-name-input"
+                  type="text"
+                  required
+                />
+              </div>
+            </div>
+            <div class="contact__container--email">
+              <label for="email-input">Email Address<span>*</span></label>
+              <input class="input" id="email-input" type="email" required />
+            </div>
+            <div class="contact__container--text">
+              <label for="message-input">Message</label>
+              <textarea class="input" id="message-input"></textarea>
+            </div>
+            <div class="contact__container--submit">
+              <input
+                type="submit"
+                value="Submit"
+                class="secondary--btn"
+                id="submit-form"
+              />
+            </div>
+          </form>
+        </div>
       </section>
     </main>
 
