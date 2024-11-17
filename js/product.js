@@ -1,6 +1,6 @@
 // Imports
-import toggleMenu from "./nav";
-import { getData } from "./getData";
+import toggleMenu from "./nav.js";
+import { getData } from "./getData.js";
 
 const productElement = document.querySelector(".product__container");
 console.log(productElement);
