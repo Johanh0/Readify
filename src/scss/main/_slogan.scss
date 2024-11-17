@@ -1,0 +1,14 @@
+.slogan {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: map-get($colors, soft-white);
+  padding: 30px 0;
+  border-radius: 20px;
+
+  div {
+    max-width: 900px;
+    text-align: center;
+    font-size: map-get($font-size, x-large);
+  }
+}

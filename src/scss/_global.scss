@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Space Grotesk", serif;
+  background-color: map-get($colors, bg-page);
+}
+
+body {
+  display: grid;
+  height: fit-content;
+  min-height: 100vh;
+  grid-template-rows: auto 1fr auto;
+}
+
+body :where(header, main) {
+  max-width: 1600px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+button.primary--btn,
+a.primary--btn {
+  width: 150px;
+  height: 60px;
+  font-size: map-get($font-size, medium);
+  border: none;
+  border-radius: 10px;
+  background-color: white;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+button.secondary--btn,
+a.secondary--btn,
+input.secondary--btn {
+  width: 150px;
+  height: 60px;
+  font-size: map-get($font-size, medium);
+  border: none;
+  border-radius: 10px;
+  background-color: black;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+// Mobile
+// @media (max-width: 425px) {
+// }
+
+// Tablet
+@media (max-width: 779px) {
+  body :where(header, main, footer) {
+    padding: 50px 20px;
+  }
+}
