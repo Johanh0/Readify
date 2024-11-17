@@ -19,12 +19,6 @@ Key features include an interactive product catalog, secure form handling, and a
 - **Node.js**: Used for the backend, allowing the platform to handle data and user requests efficiently.
 - **Vite**: A modern build tool used to bundle and optimize the application.
 
-### Screenshots
-
-![Readify Screenshot](./assets/screenshot1.png)  
-![Readify Screenshot](./assets/screenshot2.png)  
-_(Note: Please add the actual image filenames once you have them)_
-
 ### Deployment
 
 To try out the live version of the project, click the following link:
