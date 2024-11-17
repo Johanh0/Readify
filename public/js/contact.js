@@ -1,5 +1,5 @@
 // Imports
-import toggleMenu from "/public/js/nav";
+import toggleMenu from "/js/nav";
 
 // HTML Elements
 const formElement = document.querySelector("#form");
