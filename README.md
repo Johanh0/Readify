@@ -23,7 +23,7 @@ Key features include an interactive product catalog, secure form handling, and a
 
 To try out the live version of the project, click the following link:
 
-[Live Demo](https://main.d3578hr0229qox.amplifyapp.com/)
+[Live Demo](https://main.d1rmepzuj16x1r.amplifyapp.com/)
 
 ## Author
 
